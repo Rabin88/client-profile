@@ -135,7 +135,7 @@ Guardrail check: swapping the DataLoader for the naive resolver makes Test 2 fai
 7. _"Temporarily revert to the naive resolver and run Test 2 — confirm it fails."_ — proves the test
    is a real guardrail, not a tautology.
 
-## Trade-offs / what I'd do next in production
+## What I'd do next in production
 
 - **Authorisation:** The gateway validates the format of a client ID but never checks that the caller is allowed to see that client. In a platform holding client and adviser data, that's the largest gap. I'd put the caller's identity into the request context and check access before any data is fetched.
 - **Timeouts and resilience:** A failing adviser service is handled, but a hanging adviser service stalls the whole query. I'd add a timeout in the loader's batch function so slow becomes ADVISER_UNAVAILABLE, then a circuit breaker so we stop calling a service that's down.
