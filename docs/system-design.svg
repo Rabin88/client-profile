@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="1040" viewBox="0 0 1960 1040">
+<defs>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%">
+    <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.10"/>
+  </filter>
+<marker id="m-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker>
+<marker id="m-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker>
+<marker id="m-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0d9488"/></marker>
+</defs>
+<rect width="1960" height="1040" fill="#ffffff"/>
+<text x="40" y="62" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a" text-anchor="start">EV Client Profile — GraphQL composition layer</text>
+<text x="40" y="94" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569" text-anchor="start">End-to-end path of one request, from the UI to the two downstream services and back</text>
+<rect x="380" y="140" width="1000" height="780" rx="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="408" y="180" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#2563eb" text-anchor="start" letter-spacing="1.5">APOLLO GATEWAY</text>
+<text x="578" y="180" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="start">·  this project</text>
+<rect x="1545" y="300" width="375" height="620" rx="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="1570" y="338" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#059669" text-anchor="start" letter-spacing="1.5">DOWNSTREAM MICROSERVICES</text>
+<text x="1732" y="608" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="middle">Independent services:</text>
+<text x="1732" y="630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="middle">no shared database,</text>
+<text x="1732" y="652" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="middle">transaction or failure mode</text>
+<path d="M 270 240 L 418 240" fill="none" stroke="#0f172a" stroke-width="2.25" stroke-linejoin="round" marker-end="url(#m-ink)"/>
+<path d="M 420 285 L 272 285" fill="none" stroke="#0f172a" stroke-width="2.25" stroke-linejoin="round" marker-end="url(#m-ink)"/>
+<path d="M 1110 305 L 1110 363" fill="none" stroke="#0f172a" stroke-width="2.25" stroke-linejoin="round" marker-end="url(#m-ink)"/>
+<path d="M 1110 495 L 1110 553" fill="none" stroke="#0f172a" stroke-width="2.25" stroke-linejoin="round" marker-end="url(#m-ink)"/>
+<path d="M 1110 685 L 1110 743" fill="none" stroke="#0f172a" stroke-width="2.25" stroke-linejoin="round" marker-end="url(#m-ink)"/>
+<path d="M 1340 430 L 1568 430" fill="none" stroke="#0f172a" stroke-width="2.25" stroke-linejoin="round" marker-end="url(#m-ink)"/>
+<path d="M 1340 810 L 1568 810" fill="none" stroke="#0f172a" stroke-width="2.25" stroke-linejoin="round" marker-end="url(#m-ink)"/>
+<path d="M 880 410 L 782 410" fill="none" stroke="#dc2626" stroke-width="2.25" stroke-dasharray="7 6" stroke-linejoin="round" marker-end="url(#m-red)"/>
+<path d="M 880 600 L 830 600 L 830 455 L 782 455" fill="none" stroke="#dc2626" stroke-width="2.25" stroke-dasharray="7 6" stroke-linejoin="round" marker-end="url(#m-red)"/>
+<path d="M 600 365 L 600 307" fill="none" stroke="#dc2626" stroke-width="2.25" stroke-dasharray="7 6" stroke-linejoin="round" marker-end="url(#m-red)"/>
+<path d="M 880 645 L 782 645" fill="none" stroke="#0d9488" stroke-width="2.25" stroke-dasharray="7 6" stroke-linejoin="round" marker-end="url(#m-teal)"/>
+<path d="M 780 810 L 878 810" fill="none" stroke="#0d9488" stroke-width="2.25" stroke-dasharray="7 6" stroke-linejoin="round" marker-end="url(#m-teal)"/>
+<rect x="40" y="205" width="230" height="110" rx="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" filter="url(#shadow)"/>
+<text x="66" y="245" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">UI / GraphQL client</text>
+<text x="66" y="271" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Selects only the fields</text>
+<text x="66" y="293" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">it needs</text>
+<circle cx="40" cy="205" r="17" fill="#7c3aed" stroke="#ffffff" stroke-width="3"/>
+<text x="40" y="210.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="420" y="215" width="920" height="90" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+<text x="446" y="255" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Apollo Server</text>
+<text x="446" y="281" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Validates the query against the schema  ·  Introspection off outside development  ·  Stack traces never returned</text>
+<circle cx="420" cy="215" r="17" fill="#2563eb" stroke="#ffffff" stroke-width="3"/>
+<text x="420" y="220.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="880" y="365" width="460" height="130" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+<text x="906" y="405" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Root resolvers</text>
+<text x="906" y="431" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="13" font-weight="600" fill="#2563eb" text-anchor="start">Query.clientProfile · Query.clients</text>
+<text x="906" y="453" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Validate ID format and cap the list at 50</text>
+<text x="906" y="475" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">before any downstream call</text>
+<circle cx="880" cy="365" r="17" fill="#2563eb" stroke="#ffffff" stroke-width="3"/>
+<text x="880" y="370.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="880" y="555" width="460" height="130" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+<text x="906" y="595" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Field resolver</text>
+<text x="906" y="621" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="13" font-weight="600" fill="#2563eb" text-anchor="start">Client.adviser</text>
+<text x="906" y="643" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Runs only when adviser is selected,</text>
+<text x="906" y="665" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">once per client returned</text>
+<circle cx="880" cy="555" r="17" fill="#2563eb" stroke="#ffffff" stroke-width="3"/>
+<text x="880" y="560.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="880" y="745" width="460" height="130" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+<text x="906" y="785" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Adviser DataLoader</text>
+<text x="906" y="811" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="13" font-weight="600" fill="#2563eb" text-anchor="start">context.loaders.adviser</text>
+<text x="906" y="833" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Batches and de-duplicates adviser IDs;</text>
+<text x="906" y="855" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">a failed ID fails only its own key</text>
+<circle cx="880" cy="745" r="17" fill="#2563eb" stroke="#ffffff" stroke-width="3"/>
+<text x="880" y="750.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<rect x="420" y="365" width="360" height="130" rx="14" fill="#fef2f2" stroke="#dc2626" stroke-width="2" filter="url(#shadow)"/>
+<text x="446" y="405" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">formatError</text>
+<text x="446" y="431" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Allow-list of safe error codes;</text>
+<text x="446" y="453" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">all others are masked as</text>
+<text x="446" y="475" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="13" font-weight="600" fill="#dc2626" text-anchor="start">INTERNAL_SERVER_ERROR</text>
+<rect x="420" y="555" width="360" height="130" rx="14" fill="#ffffff" stroke="#64748b" stroke-width="2" filter="url(#shadow)"/>
+<text x="446" y="595" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Logger</text>
+<text x="446" y="621" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Error codes and record IDs only,</text>
+<text x="446" y="643" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">never names or personal data</text>
+<rect x="420" y="745" width="360" height="130" rx="14" fill="#f0fdfa" stroke="#0d9488" stroke-width="2" filter="url(#shadow)"/>
+<text x="446" y="785" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Context factory</text>
+<text x="446" y="811" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Creates a new DataLoader for every</text>
+<text x="446" y="833" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">request, so no cache is shared</text>
+<text x="446" y="855" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">between users</text>
+<rect x="1570" y="365" width="325" height="130" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+<text x="1596" y="405" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">ClientService</text>
+<text x="1596" y="431" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="13" font-weight="600" fill="#059669" text-anchor="start">getDetails(clientId)</text>
+<text x="1596" y="453" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="13" font-weight="600" fill="#059669" text-anchor="start">returns { id, firstName,</text>
+<text x="1596" y="475" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="13" font-weight="600" fill="#059669" text-anchor="start">lastName, adviserId }</text>
+<circle cx="1570" cy="365" r="17" fill="#059669" stroke="#ffffff" stroke-width="3"/>
+<text x="1570" y="370.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="1570" y="745" width="325" height="130" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+<text x="1596" y="785" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">AdviserService</text>
+<text x="1596" y="811" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="13" font-weight="600" fill="#059669" text-anchor="start">getDetails(adviserId)</text>
+<text x="1596" y="833" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="13" font-weight="600" fill="#059669" text-anchor="start">returns { id, name, firm }</text>
+<circle cx="1570" cy="745" r="17" fill="#059669" stroke="#ffffff" stroke-width="3"/>
+<text x="1570" y="750.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">7</text>
+<rect x="293.15" y="213" width="103.7" height="21" rx="6" fill="#ffffff"/>
+<text x="345" y="228" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="middle">GraphQL query</text>
+<rect x="286.25" y="295" width="117.5" height="21" rx="6" fill="#ffffff"/>
+<text x="345" y="310" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="middle">data + errors[]</text>
+<rect x="1119" y="514" width="179.60000000000002" height="21" rx="6" fill="#f8fafc"/>
+<text x="1126" y="529" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="start">for each client returned</text>
+<rect x="1119" y="704" width="129.5" height="21" rx="6" fill="#f8fafc"/>
+<text x="1126" y="719" font-family="Menlo, Monaco, 'Courier New', monospace" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">load(adviserId)</text>
+<rect x="1379.0" y="403" width="152.0" height="21" rx="6" fill="#ffffff"/>
+<text x="1455" y="418" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="middle">1 call per client ID</text>
+<rect x="1361.75" y="783" width="186.5" height="21" rx="6" fill="#ffffff"/>
+<text x="1455" y="798" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="middle">1 call per unique adviser</text>
+<rect x="802.3" y="383" width="55.400000000000006" height="21" rx="6" fill="#f8fafc"/>
+<text x="830" y="398" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#dc2626" text-anchor="middle">errors</text>
+<rect x="609" y="326" width="138.2" height="21" rx="6" fill="#f8fafc"/>
+<text x="616" y="341" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#dc2626" text-anchor="start">sanitised errors[]</text>
+<rect x="809.2" y="618" width="41.6" height="21" rx="6" fill="#f8fafc"/>
+<text x="830" y="633" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0d9488" text-anchor="middle">logs</text>
+<rect x="785.05" y="783" width="89.9" height="21" rx="6" fill="#f8fafc"/>
+<text x="830" y="798" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0d9488" text-anchor="middle">per request</text>
+<circle cx="394" cy="973" r="13" fill="#2563eb"/>
+<text x="394" y="978" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">n</text>
+<text x="416" y="978" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Order of the request</text>
+<path d="M 610 973 L 666 973" fill="none" stroke="#0f172a" stroke-width="2.25" stroke-linejoin="round" marker-end="url(#m-ink)"/>
+<text x="678" y="978" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Request and data</text>
+<path d="M 868 973 L 924 973" fill="none" stroke="#dc2626" stroke-width="2.25" stroke-dasharray="7 6" stroke-linejoin="round" marker-end="url(#m-red)"/>
+<text x="936" y="978" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Error path</text>
+<path d="M 1086 973 L 1142 973" fill="none" stroke="#0d9488" stroke-width="2.25" stroke-dasharray="7 6" stroke-linejoin="round" marker-end="url(#m-teal)"/>
+<text x="1154" y="978" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#475569" text-anchor="start">Per-request wiring and logging</text>
+</svg>
