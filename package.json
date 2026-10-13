@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon --watch src --ext ts,json --exec tsx src/index.ts",
+    "dev": "NODE_ENV=development nodemon --watch src --ext ts,json --exec tsx src/index.ts",
     "typecheck": "tsc --noEmit",
     "build": "tsc"
   },

@@ -114,27 +114,6 @@ Guardrail check: swapping the DataLoader for the naive resolver makes Test 2 fai
 
 ---
 
-## Prompt sequence (for doing this live with Claude Code)
-
-1. _"Read CLAUDE.md. Initialise a TypeScript/Node project with Apollo Server 5, strict tsconfig as
-   specified, Jest via ts-jest. Don't write resolvers yet."_
-2. _"Create mock ClientService.getDetails and AdviserService.getDetails using in-memory arrays with
-   the shapes in the brief. Include client A-000 linked to adviser ADV-99, which is revoked: make
-   the adviser service throw an error that looks like a real downstream HTTP failure."_
-   — deliberately make the failure realistic so the audit has something to catch.
-3. _"Add Client and Adviser types, `clientProfile(clientId: ID!)` and a `clients(clientIds)` list
-   query, with a field-level resolver for Client.adviser."_ → **review: N+1 present.**
-4. _"Client.adviser causes N+1 on the list query. Replace it with a per-request DataLoader created in
-   the context factory. Use allSettled so one failed key doesn't reject the batch."_ → **review:
-   check it's not a module singleton.**
-5. _"Query A-000 and show me the raw response."_ → **review: internals leaked.** _"Catch at the field
-   boundary, throw a coded ADVISER_UNAVAILABLE, and add an allow-list formatError. Disable stack
-   traces unconditionally."_
-6. _"Write the three integration tests from CLAUDE.md using executeOperation and jest.spyOn call
-   counts. For Test 3, assert a list of PII and topology strings is absent from the serialised errors."_
-7. _"Temporarily revert to the naive resolver and run Test 2 — confirm it fails."_ — proves the test
-   is a real guardrail, not a tautology.
-
 ## What I'd do next in production
 
 - **Authorisation:** The gateway validates the format of a client ID but never checks that the caller is allowed to see that client. In a platform holding client and adviser data, that's the largest gap. I'd put the caller's identity into the request context and check access before any data is fetched.

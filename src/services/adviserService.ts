@@ -24,7 +24,6 @@ export class DownstreamServiceError extends Error {
 /** Mock of the Adviser-Data microservice. */
 export const AdviserService = {
   async getDetails(adviserId: string): Promise<AdviserRecord> {
-    // console.log(`AdviserService.getDetails called with ${adviserId}`);
     if (revoked.has(adviserId)) {
       throw new DownstreamServiceError(
         `GET http://adviser-svc.internal:8443/v1/advisers/${adviserId} -> 403 Forbidden: adviser licence revoked`,
